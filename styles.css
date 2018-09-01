@@ -1,0 +1,65 @@
+body{
+    background-color: #333
+}
+
+.square {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    background-color: white;
+    -webkit-animation-name: shapes; 
+    -webkit-animation-duration: 4s; 
+    animation-name: shapes;
+    animation-duration: 4s;
+    animation-iteration-count: 1;
+}
+
+@keyframes shapes {
+    0%   {background-color: red;left: 0px; top: 0px;}
+    25%  {background-color: orange;left: 300px; top: 0px;}
+    50%  {background-color: yellow; left: 300px; top: 300px;}
+    75%  {background-color: green; left: 0px; top: 300px;}
+    100% {background-color: blue; left:0px; top:0px;}
+}
+
+.circle {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    background-color: wheat;
+    animation-name: oval; 
+    animation-duration: 4s; 
+    animation-delay: 2s;
+    animation-name: oval;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes oval {
+    0%   {background-color: orangered;left: 0px; top: -0px; border-radius: 0 0 0 0;}
+    25%  {background-color: greenyellow;left: 200px; top: 0px; border-radius: 50% 0 0 0};
+    50%  {background-color: purple; left: 200px; top: 200px; border-radius: 50% 50% 0 0;}
+    75%  {background-color: teal; left: 0px; top: 200px; border-radius: 50% 50% 50% 0;}
+    100% {background-color: skyblue; left:0px; top:0px; border-radius: 50% 50% 50% 50%};
+}
+
+
+.dunker {
+    width: 250px;
+    height: 250px;
+    position: relative;
+    background-color: whitesmoke;
+    animation-name: basket; 
+    animation-duration: 4s; 
+    animation-name: basket;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes basket {
+    0%   {background-color: purple;left: 0px; top: -0px; border-radius: 0 0 0 0;}
+    25%  {background-color: pink;left: 200px; top: 0px; border-radius: 50% 0 0 0};
+    50%  {background-color: magenta; left: 200px; top: 200px; border-radius: 50% 50% 0 0;}
+    75%  {background-color: hotpink; left: 0px; top: 200px; border-radius: 50% 50% 50% 0;}
+    100% {background-color: lightgreen; left:0px; top:0px; border-radius: 50% 50% 50% 50%};
+}
